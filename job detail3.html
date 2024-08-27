@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details | Job Portal</title>
+    
+    <!-- Metadata -->
+    <meta name="description" content="Detailed information about the Back-End Developer position including job responsibilities, requirements, internship details, and application instructions.">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Font Preload -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheets -->
+    <link href="/static/css/styles.css" rel="stylesheet">
+    
+    <!-- Internal Styles -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slide-down 0.5s ease-out;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+            animation: fade-in 1s ease-in-out;
+        }
+        .job-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            animation: fade-in-left 1s ease-in-out;
+        }
+        .company {
+            font-size: 18px;
+            color: #555;
+            margin: 0 0 20px;
+            animation: fade-in-left 1.2s ease-in-out;
+        }
+        .job-details {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .job-details h2 {
+            font-size: 22px;
+            margin: 0 0 10px;
+            animation: fade-in-left 1.4s ease-in-out;
+        }
+        .job-details p, .job-details ul {
+            margin: 0 0 10px;
+            color: #555;
+            animation: fade-in-left 1.6s ease-in-out;
+        }
+        .job-details ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .apply-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            animation: fade-in-left 1.8s ease-in-out;
+        }
+        .apply-button:hover {
+            background-color: #0056b3;
+        }
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes fade-in-left {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Details</h1>
+    </header>
+
+    <div class="container">
+        <div class="job-details">
+            <h1 class="job-title">Back-End Developer</h1>
+            <p class="company">Company: Tech Innovators Inc.</p>
+            
+            <h2>Job Description</h2>
+            <p>We are looking for a skilled Back-End Developer to join our team. The ideal candidate will have strong experience in server-side logic, database management, and ensuring high performance and responsiveness of applications. You will work closely with front-end developers to integrate user-facing elements with server-side logic.</p>
+            
+            <h2>Responsibilities</h2>
+            <ul>
+                <li>Develop and maintain server-side logic for web applications.</li>
+                <li>Ensure high performance and responsiveness to requests from the front-end.</li>
+                <li>Integrate front-end elements developed by your colleagues into the application.</li>
+                <li>Optimize applications for maximum speed and scalability.</li>
+                <li>Implement security and data protection measures.</li>
+                <li>Collaborate with front-end developers, designers, and other team members.</li>
+            </ul>
+            
+            <h2>Requirements</h2>
+            <ul>
+                <li>Proven experience as a Back-End Developer or similar role.</li>
+                <li>Proficiency in server-side languages such as Python, Ruby, Java, PHP, or Node.js.</li>
+                <li>Experience with databases such as MySQL, PostgreSQL, or MongoDB.</li>
+                <li>Familiarity with front-end technologies (HTML, CSS, JavaScript) is a plus.</li>
+                <li>Understanding of security and data protection best practices.</li>
+                <li>Strong problem-solving skills and attention to detail.</li>
+            </ul>
+            
+            <h2>Internship Details</h2>
+            <p>We offer internship opportunities for aspiring Back-End Developers looking to gain real-world experience. As an intern, you will:</p>
+            <ul>
+                <li>Work on live projects that impact the performance and scalability of web applications.</li>
+                <li>Collaborate with experienced developers to learn best practices and tools.</li>
+                <li>Gain hands-on experience with server-side technologies and databases.</li>
+                <li>Have the opportunity to transition to a full-time role upon successful completion of the internship.</li>
+            </ul>
+            
+            <h2>Personal Details</h2>
+            <p>Our company is based in New York City, offering a vibrant and innovative work environment with ample opportunities for professional growth.</p>
+            
+            <h2>Company Details</h2>
+            <p><strong>Location:</strong> New York City, NY</p>
+            <p><strong>Salary:</strong> $90,000 - $120,000</p>
+            
+            <h2>How to Apply</h2>
+            <p>Please submit your resume, cover letter, and any relevant work samples through our online application portal. We look forward to reviewing your application!</p>
+            
+            <a href="Apply4.html" class="apply-button">Apply Now</a>
+        </div>
+    </div>
+</body>
+</html>

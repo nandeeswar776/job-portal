@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Open Source Job Portal</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slide-down 0.5s ease-out;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* About Us Section */
+        .about-section {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+            animation: fade-in-up 1s ease-in-out;
+        }
+
+        .about-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: fade-in-up 1.2s ease-in-out;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation: fade-in-up 1.4s ease-in-out;
+        }
+
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: zoom-in 1s ease-in-out;
+        }
+
+        /* Team Section */
+        .team-section {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            animation: fade-in-up 1s ease-in-out;
+        }
+
+        .team-section h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fade-in-up 1.2s ease-in-out;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            max-width: 250px;
+            margin: 20px;
+            animation: fade-in-up 1.4s ease-in-out;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .team-member h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            animation: fade-in 2s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoom-in {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="job1.html">Jobs</a></li>
+                <li><a href="employer.html">Employers</a></li>
+                <li><a href="login.html" class="login-button">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h1>About Us</h1>
+        <p>At Open Source Job Portal, we are dedicated to connecting talented professionals with the best job opportunities in the industry. Our platform is designed to provide an easy and efficient job search experience for job seekers and a comprehensive recruitment solution for employers.</p>
+        <img src="C:\Users\M.NANDEESWAR\Downloads\team.jpg" alt="Our Team">
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="C:\Users\M.NANDEESWAR\Downloads\th (8).jpeg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.NANDEESWAR\Downloads\image1-single-team-1.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Chief Technology Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\M.NANDEESWAR\Downloads\WhatsApp Image 2024-08-12 at 22.22.57_0771eb8f.jpg" alt="Team Member 3">
+                <h3>Mike Johnson</h3>
+                <p>Head of Marketing</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Open Source Job Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employers | Open Source Job Portal</title>
+    <link rel="stylesheet" href="styles2.css">
+
+    <!-- Internal Styles -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slide-down 0.5s ease-out;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('/static/images/hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            animation: fade-in 1.2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0 20px;
+            animation: fade-in 1.4s ease-in-out;
+        }
+
+        .hero .search-form {
+            display: inline-block;
+            animation: fade-in 1.6s ease-in-out;
+        }
+
+        .search-form input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 300px;
+        }
+
+        .search-form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #ffd700;
+            color: #007bff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-form button:hover {
+            background-color: #e0b000;
+        }
+
+        /* Featured Employers Section */
+        .featured-employers {
+            padding: 50px 20px;
+            background-color: #fff;
+            animation: fade-in 1.8s ease-in-out;
+        }
+
+        .featured-employers h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            animation: fade-in-left 2s ease-in-out;
+        }
+
+        .employer-listing {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fade-in-right 2.2s ease-in-out;
+        }
+
+        .employer-listing h3 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .employer-listing p {
+            font-size: 16px;
+            margin: 0 0 10px;
+        }
+
+        .employer-listing button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .employer-listing button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Employer Details Section */
+        .employer-details {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: slide-down 0.5s ease-out;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            animation: fade-in 2.4s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-left {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fade-in-right {
+            0% {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="job1.html">Jobs</a></li>
+                <li><a href="employer.html">Employers</a></li>
+                <li><a href="login.html" class="login-button">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Employers</h1>
+        <p>Connect with top talent for your company.</p>
+        <form class="search-form">
+            <input type="text" id="employer-search" placeholder="Search for employers...">
+            <button type="button" onclick="searchEmployers()">Search</button>
+        </form>
+    </section>
+
+    <section class="featured-employers">
+        <h2>Featured Employers</h2>
+        <div id="employer-list">
+            <div class="employer-listing" data-name="ABC Tech Solutions">
+                <h3>ABC Tech Solutions</h3>
+                <p>Location: New York, NY</p>
+                <p>Industry: Information Technology</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+                <div class="employer-details">
+                    <p>Details: ABC Tech Solutions specializes in IT consulting and software development.</p>
+                </div>
+            </div>
+            <div class="employer-listing" data-name="Global Finance Corp">
+                <h3>Global Finance Corp</h3>
+                <p>Location: San Francisco, CA</p>
+                <p>Industry: Finance</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+                <div class="employer-details">
+                    <p>Details: Global Finance Corp provides financial services and investment solutions.</p>
+                </div>
+            </div>
+            <div class="employer-listing" data-name="Healthcare Innovations">
+                <h3>Healthcare Innovations</h3>
+                <p>Location: Chicago, IL</p>
+                <p>Industry: Healthcare</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+                <div class="employer-details">
+                    <p>Details: Healthcare Innovations focuses on developing cutting-edge healthcare solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Open Source Job Portal. All rights reserved.</p>
+    </footer>
+    <script>
+        function searchEmployers() {
+            const searchInput = document.getElementById('employer-search').value.toLowerCase();
+            const employers = document.querySelectorAll('.employer-listing');
+
+            employers.forEach(employer => {
+                const employerName = employer.getAttribute('data-name').toLowerCase();
+                if (employerName.includes(searchInput)) {
+                    employer.style.display = 'block';
+                } else {
+                    employer.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleDetails(button) {
+            const details = button.nextElementSibling;
+
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                button.textContent = 'View Details';
+            } else {
+                details.style.display = 'block';
+                button.textContent = 'Hide Details';
+            }
+        }
+    </script>
+</body>
+
+</html>

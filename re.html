@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Job Portal</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="job1.html">Jobs</a></li>
+                <li><a href="employer.html">Employers</a></li>
+                <li><a href="login.html" class="login-button">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About Us</a></li> <!-- New item added -->
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to the Open Source Job Portal</h1>
+        <p>Your gateway to the best job opportunities.</p>
+        <form class="search-form" onsubmit="return false;">
+            <input type="text" id="job-search" placeholder="Search for jobs..." oninput="searchJobs()">
+            <button type="button" onclick="searchJobs()">Search</button>
+        </form>
+    </section>
+
+    <section class="featured-jobs">
+        <h2>Featured Jobs</h2>
+        <div id="job-list">
+            <div class="job-listing" data-title="Software Developer">
+                <h3>Software Developer</h3>
+                <p>Location: New York, NY</p>
+                <p>Description: A great job opportunity for a skilled developer...</p>
+                <a href="Apply.html" class="apply-button">Apply Now</a>
+            </div>
+            <div class="job-listing" data-title="Product Manager">
+                <h3>Product Manager</h3>
+                <p>Location: San Francisco, CA</p>
+                <p>Description: Seeking an experienced product manager...</p>
+                <a href="Apply.html" class="apply-button">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Open Source Job Portal. All rights reserved.</p>
+    </footer>
+    <script src="script1.js"></script>
+    <script>
+        function searchJobs() {
+            const searchInput = document.getElementById('job-search').value.toLowerCase();
+            const jobListings = document.querySelectorAll('.job-listing');
+
+            jobListings.forEach(job => {
+                const jobTitle = job.getAttribute('data-title').toLowerCase();
+                if (jobTitle.includes(searchInput)) {
+                    job.style.display = 'block';
+                } else {
+                    job.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
